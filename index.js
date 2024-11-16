@@ -23,10 +23,18 @@ async function main() {
 
     // Add shadcn-ui
     console.log('\nInstalling shadcn/ui...');
-    await execa('npm', [
-        'shadcnuis@latest',
+    await execa('npx', [
+        'shadcn@latest',
         'init',
         '-d'
+    ], { stdio: 'inherit' });
+
+    // add all the shacn-ui components
+    console.log('\nInstalling shadcn/ui components...');
+    await execa('npx', [
+        'shadcn@latest',
+        'add',
+        '-all'
     ], { stdio: 'inherit' });
 
     console.log('\n✅ Setup complete! To start developing:');
