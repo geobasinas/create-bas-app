@@ -34,7 +34,7 @@ async function main() {
     await execa('npx', [
         'shadcn@latest',
         'add',
-        '-all'
+        '-a'
     ], { stdio: 'inherit' });
 
     console.log('\n✅ Setup complete! To start developing:');
