@@ -1,0 +1,22 @@
+{
+  "name": "@geobasinas/create-bas-app",
+  "version": "1.0.1",
+  "description": "a simple cli tool to make a nextjs app with shadcn ui without the hassle",
+  "main": "index.js",
+  "bin": {
+    "create-bas-app": "./index.js"
+  },
+  "type": "module",
+  "keywords": [
+    "create-bas-app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geobasinas/create-bas-app.git"
+  },
+  "author": "geobasinas",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^9.5.1"
+  }
+}
